@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+background-image: url(".jpg");
+ 
+/* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #FFA500;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #fed8b1;
+
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #fed8b1;
+
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/*Style the tab content */
+a:link {
+	;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+</style>
+</head>
+ 
+<body>
+
+<h1> HYDXPLORE</h1>
+
+<div class="tab">
+
+<div id="London" class="link">  <button class="tablinks" onclick="openCity(event, 'London')"><a href="after_registeration.html" style="text-decoration: none;">HOME</a></button>  </div>
+ <div id="Paris" class="link"> <button class="tablinks" onclick="openCity(event, 'Paris')"><a href="" style="text-decoration: none;">ABOUT US</a></button>  </div>
+ <div id="Tokyo" class="link">   <button class="tablinks" onclick="openCity(event, 'Tokyo')"><a href="hotels.html" style="text-decoration: none;">HOTELS</a></button>  </div>
+
+  
+
+  <div id="Tokyo" class="link"> <button class="tablinks" onclick="openCity(event, 'Tokyo')"><a href="shopping.html" style="text-decoration: none;">SHOPPING</a></button>  </div>
+<div class="dropdown">  
+<div id="Tokyo" class="link"> 
+<button class="tablinks"  onclick="myFunction()" class="dropbtn"><a href="tourist_places.html" style="text-decoration: none;">TOURIST SPOTS</a></button>
+  <a href="tourist_places.html" style="text-decoration: none;">  </div>
+<div id="myDropdown" class="dropdown-content">
+    <a href="history.html">HISTORIC PLACES</a>
+    <a href="MUSEUM.html">MUSEUMS</a>
+    <a href="amusementpark.html">AMUSEMENT PARKS</a>
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="hyd1.jpg" style="width:100%">
+  <div class="text"><h1>WELCOME TO HYDXPLORE</h1></div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="hyd2.jpg" style="width:100%">
+  <div class="text"><h1>HYDERABAD A BEAUTIFUL CITY</h1></div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="hyd3.jpg" style="width:100%">
+  <div class="text"><h1>HAVE A SAFE JOURNEY</h1></div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<div class="cont">
+<div class="contbox">
+<H1>EVENTS HAPPENING IN HYDERABAD</H1>
+</div>
+</div>
+<iframe src="https://www.meteoblue.com/en/weather/widget/daily?geoloc=detect&days=7&tempunit=CELSIUS&windunit=KNOT&precipunit=MILLIMETER&coloured=coloured&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&winddirection=0&winddirection=1&uv=0&humidity=0&precipitation=0&precipitation=1&precipitationprobability=0&precipitationprobability=1&spot=0&spot=1&pressure=0&layout=dark"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 378px; height: 367px"></iframe><div><!-- DO NOT REMOVE THIS LINK -->
+</div>
+<script>
+
+function openCity(evt, spotName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(spotName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+</body>
+</html> 
